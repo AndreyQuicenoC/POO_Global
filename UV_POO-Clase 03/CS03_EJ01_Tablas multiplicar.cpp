@@ -1,3 +1,8 @@
+// autor: Andrey Quiceno.
+// contacto: adolfo.quiceno@correounivalle.edu.co
+// fecha de creación: 06/09/23
+// fecha última modificación: 11/09/23
+
 #include<iostream>
 using namespace std;
 
