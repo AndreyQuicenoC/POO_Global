@@ -21,7 +21,7 @@ int main(){
     cout<<"Salario: "; cin>>salario;
 
     cout<<fixed<<setprecision(0)<<nombre_empleado<<" "<<apellido_empleado<<", identificada con el numero de identidad "<<NIT<<", en el puesto de "<<cargo<<" recibe un pago mensual de "<<salario<<endl;
-    //'fixed' para representar con los digitos exactos y 'setpresicion(x)' para determinar cantidad de decimales, en este caso, ninguno.
+    //'fixed' para representar con los digitos exactos y 'setprecision(x)' para determinar cantidad de decimales, en este caso, ninguno.
     
     return 0;
 }

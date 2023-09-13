@@ -8,21 +8,20 @@ datos son necesarios para: nombre del producto, precio, garantía y nombre de us
 
 #include <iostream>
 #include <iomanip> //Para cambiar la notación científica del double, busqué en Stack Overflow "How to make C++ cout not use scientific notation".
-#define tamano_producto 30 //Para poder definir cadenas d texto con espacios.
-#define tamano_usuario 30
 using namespace std;
 
 
 int main(){
-    char nombreProducto[tamano_producto], nombreUsuario[tamano_usuario];
+    string nombreProducto, nombreUsuario;
     int garantiaProducto;
     double precioProducto;
 
-    cout<<"Nombre producto: "; cin.getline(nombreProducto,tamano_producto); //Alojar un linea de texto con espacios en la variable
+    cout<<"Nombre producto: "; getline(cin,nombreProducto); //Alojar un linea de texto con espacios en la variable
     cout<<"Precio: "; cin>>precioProducto;
     cout<<"Garantía (años): "; cin>>garantiaProducto;
-    cout<<"Nombre usuario: "; cin.getline(nombreUsuario,tamano_usuario);
-
-    cout<<fixed<<setprecision(0)<<nombreUsuario<<" adquirió "<<nombreProducto<<" por el precio de "<<precioProducto<<", con garantia de "<<garantiaProducto<<" años."<<endl;
-    //'fixed' para representar con los digitos exactos y 'setpresicion(x)' para determinar cantidad de decimales, en este caso, ninguno.
+    cin.ignore(); //Permitir que funcione el próximo getline.
+    cout<<"Nombre usuario: "; getline(cin,nombreUsuario);
+    
+    cout<<fixed<<setprecision(0)<<nombreUsuario<<" adquirio "<<nombreProducto<<" por el precio de "<<precioProducto<<", con garantia de "<<garantiaProducto<<" años."<<endl;
+    //'fixed' para representar con los digitos exactos y 'setprescision(x)' para determinar cantidad de decimales, en este caso, ninguno.
 }   
