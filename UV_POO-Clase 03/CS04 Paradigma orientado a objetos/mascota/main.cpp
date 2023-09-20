@@ -1,7 +1,7 @@
 #include "mascota.h"
 #include <iostream>
-
 using namespace std;
+
 int main(){
     mascota kira, simon, tamagochi; //constructor.
     kira.setNombre("Kira");
@@ -15,6 +15,7 @@ int main(){
     simon.setTipo("gato");
     simon.setComida(true);
     simon.come(); 
+    kira.darLaPata();
 
     tamagochi.setNombre("Simon");
     tamagochi.setTipo("gato");
