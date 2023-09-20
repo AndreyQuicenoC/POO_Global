@@ -1,9 +1,11 @@
 #include <iostream>
 #include <string>
 #include"CalificaEmpleados.h"
+using namespace std;
 int main()
 {
-    CalificaEmpleados calificacionAnalizada("a");
-    cout<<"a"<<endl;
-    cout<<calificacionAnalizada.analizarCalificacion("a");
+    string calificacion;
+    CalificaEmpleados calificacionAnalizada("");
+    cin>>calificacion;
+    cout<<calificacionAnalizada.analizarCalificacion(calificacion)<<endl;
 }
